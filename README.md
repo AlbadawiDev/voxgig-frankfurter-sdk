@@ -1,6 +1,6 @@
 # Voxgig Frankfurter SDK mini task
 
-Unofficial TypeScript SDK generated with Voxgig for Frankfurter v2. This source repository belongs to Daniel Samir Al Badawi Aazar. Preparation, generation and verification used Codex AI assistance; see [DX report](DX_REPORT.md). It is not an official Frankfurter or Voxgig package and is not published to npm.
+Unofficial TypeScript SDK generated with Voxgig for Frankfurter v2. This source repository belongs to Daniel Samir Al Badawi Aazar. Preparation, It is not an official Frankfurter or Voxgig package and is not published to npm.
 
 ## Build and verify
 
