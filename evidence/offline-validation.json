@@ -1,0 +1,13 @@
+{
+  "node": "v24.19.0",
+  "npm": "11.9.0",
+  "generated_tests": 249,
+  "passed": 237,
+  "skipped": 12,
+  "failed": 0,
+  "cancelled": 0,
+  "doctor_exit_code": 0,
+  "doctor_warning": "copy-record log directory ignored by scaffold",
+  "sdkgen": "4.34.1",
+  "apidef": "8.23.0"
+}

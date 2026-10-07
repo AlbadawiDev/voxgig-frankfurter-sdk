@@ -1,0 +1,8 @@
+node_modules/
+**/node_modules/
+generated/
+**/dist/
+**/dist-test/
+*.tsbuildinfo
+*.log
+.env*
