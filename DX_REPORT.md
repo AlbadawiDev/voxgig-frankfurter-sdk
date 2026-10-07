@@ -1,6 +1,8 @@
 # Mini task 1: developer experience report
 
-Prepared for Daniel Samir Al Badawi Aazar with Codex AI assistance, 7 October 2026. This records automated work and observed results; it does not claim that Daniel personally ran the commands or reviewed the implementation. Preparation was time-boxed to a maximum 30-minute window.
+Daniel Samir Al Badawi Aazar · 7 October 2026
+
+First Voxgig mini task: generate and verify a Frankfurter SDK using the Voxgig toolchain. Preparation used AI assistance, as permitted by the exercise, within a 30-minute preparation window.
 
 ## Choice and method
 
@@ -8,7 +10,7 @@ Frankfurter v2 is a public, free API with no API key requirement and an official
 
 The API spec was downloaded unchanged from https://api.frankfurter.dev/v2/openapi.json. The actual Voxgig generator, not a hand-written SDK, produced TypeScript for four semantic entities: Coverage, Currency, Provider and Rate. The spec contains nine GET paths. No paid trial, API account or secret was used.
 
-AI selected and researched the API, ran the generator, diagnosed the install conflict, declared project metadata, wrote a small live smoke script, checked generated types and tests, and prepared this report. Generated runtime and test source were not manually rewritten. The root README and reproduction script are authored packaging for this source-only exercise.
+AI-assisted tooling handled API research, generator execution, dependency troubleshooting, project configuration, smoke-test scripting and report preparation. Verification used the generated TypeScript types, automated tests, `doctor` and live API requests. The SDK runtime and tests were produced by the Voxgig generator. The root README and reproduction script package this source-only exercise.
 
 ## Commands and tool versions actually used
 
@@ -22,7 +24,7 @@ Node 24.19.0, npm 11.9.0; create-sdkgen 0.30.6, apidef 8.23.0, sdkgen 4.34.1, mo
 6. Ran `voxgig-sdkgen doctor`: exit 0, scaffold matched; warning about ignored copy records remained.
 7. Executed real generated SDK calls against Frankfurter, with a 20-second request timeout: pair lookup, same-currency identity, currency lookup, and an invalid currency. All four final checks passed; statuses were 200, 200, 200 and 422. See the committed JSON evidence.
 
-The standalone reproduction script packages the same observed command sequence. It is not a claim of a separate completed end-to-end run of that script.
+Reproduction script validation: syntax checked; end-to-end execution remains unverified. The generation, build and test commands listed above were executed separately.
 
 ## Friction and suggestions
 
