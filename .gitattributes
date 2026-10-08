@@ -1,0 +1,3 @@
+# Generated documentation tests parse fenced code blocks with LF delimiters.
+# Keep docs reproducible on Windows without modifying generated TypeScript.
+*.md text eol=lf

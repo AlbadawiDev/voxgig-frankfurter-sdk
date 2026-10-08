@@ -45,6 +45,10 @@ The committed SDK source and tests are generator output. `openapi.json` is the u
 
 The verified generated suite passed 237 tests, skipped 12 and failed 0. Four live checks passed: EUR/USD pair, EUR/EUR identity, EUR currency details and invalid-currency rejection with HTTP 422. [Live evidence](evidence/live-validation.json) records request URLs and statuses. This is a small exercise, not exhaustive API coverage or production certification.
 
+Local Windows verification on 7 October 2026 used Node 24.14.0: TypeScript build passed and the offline suite passed 237 tests, skipped 12 and failed 0. The first checkout exposed seven documentation-test failures because Windows converted Markdown fences to CRLF. Repository attributes now preserve LF for Markdown; generated TypeScript was not edited. The new CI workflow runs the offline suite on Windows and Linux. `npm audit` reported zero known dependency vulnerabilities at this check. Existing live evidence was retained; no new live API calls were made during the local review.
+
+The repository retains the generated target and its test corpus, while the full model/template toolchain is recreated under `generated/` by `scripts/regenerate.cjs`. The inherited generated guides link to a root `AGENTS.md` that is absent in this exercise repository. Follow the documented regeneration script for semantic source changes; do not patch generated runtime code directly. The generated target's installation text mentions a clone carrying `dist/`; this source repository omits compiled files, so run `npm ci` and `npm run build` in `ts/` before local installation.
+
 ## Sources and license
 
 - [Voxgig generator](https://voxgig.com/sdk) and [agent guide](https://voxgig.com/sdk/agents)
